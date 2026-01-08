@@ -1,0 +1,35 @@
+
+
+/trainingDocument
+
+# Laravel環境変数（機密情報）
+app/.env
+
+# Composer依存関係
+app/vendor/
+
+# npm依存関係
+app/node_modules/
+
+# ログとキャッシュ
+app/storage/*.log
+app/storage/logs/
+app/storage/framework/cache/
+app/storage/framework/sessions/
+app/storage/framework/testing/
+app/storage/framework/views/
+
+# ビルドキャッシュ
+app/bootstrap/cache/*
+!app/bootstrap/cache/.gitkeep
+
+# IDE設定
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
