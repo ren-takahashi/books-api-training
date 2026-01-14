@@ -42,9 +42,9 @@ RUN \
     \
     # Laravel の storage と bootstrap/cache に書き込み権限を設定
     echo '# Laravel の storage と bootstrap/cache に書き込み権限を設定' >> /entrypoint.sh && \
-    echo 'if [ -d /srv/app/app/storage ]; then' >> /entrypoint.sh && \
-    echo '  chmod -R 775 /srv/app/app/storage /srv/app/app/bootstrap/cache 2>/dev/null || true' >> /entrypoint.sh && \
-    echo '  chown -R www-data:www-data /srv/app/app/storage /srv/app/app/bootstrap/cache 2>/dev/null || true' >> /entrypoint.sh && \
+    echo 'if [ -d /srv/app/storage ]; then' >> /entrypoint.sh && \
+    echo '  chmod -R 775 /srv/app/storage /srv/app/bootstrap/cache 2>/dev/null || true' >> /entrypoint.sh && \
+    echo '  chown -R www-data:www-data /srv/app/storage /srv/app/bootstrap/cache 2>/dev/null || true' >> /entrypoint.sh && \
     echo 'fi' >> /entrypoint.sh && \
     echo '' >> /entrypoint.sh && \
     \

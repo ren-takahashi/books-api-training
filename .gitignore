@@ -1,35 +1,24 @@
-
-
-/trainingDocument
-
-# Laravel環境変数（機密情報）
-app/.env
-
-# Composer依存関係
-app/vendor/
-
-# npm依存関係
-app/node_modules/
-
-# ログとキャッシュ
-app/storage/*.log
-app/storage/logs/
-app/storage/framework/cache/
-app/storage/framework/sessions/
-app/storage/framework/testing/
-app/storage/framework/views/
-
-# ビルドキャッシュ
-app/bootstrap/cache/*
-!app/bootstrap/cache/.gitkeep
-
-# IDE設定
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# OS生成ファイル
+*.log
 .DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
 Thumbs.db
